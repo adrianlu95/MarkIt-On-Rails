@@ -4,7 +4,7 @@
 <img src="https://img.shields.io/badge/platform-web-blue.svg">
 
 #What is it?
-MarkIt is your go to app for selling and purchasing used goods within a college community. Users can search, sell, purchase and track items via Android, iPhone or on your favorite web browser. MarkIt has a dynamic chat and offering system which provides great communication between the buyer and seller. Worried about being robbed or cheated? MarkIt allows users to rate each other! Are you looking for an item but it's not available? MarkIt will track that for you! MarkIt is your one stop app for buying and selling used goods!
+MarkIt is your go to app for selling and purchasing used goods within a college community. Users can search, sell, purchase and track items via their favorite web browser. MarkIt has a dynamic chat and offering system which provides great communication between the buyer and seller. Worried about being robbed or cheated? MarkIt allows users to rate each other! Are you looking for an item but it's not available? MarkIt will track that for you! MarkIt is your one stop app for buying and selling used goods!
 
 #Features
 - Profile
@@ -19,7 +19,6 @@ MarkIt is your go to app for selling and purchasing used goods within a college 
 	* geographic location
 - Buying
 	* list view
-	* map view
 	* card view
 	* sharing
 	* tagging
@@ -74,7 +73,7 @@ The profile view shows the user's profile picture, the user's rating, the user's
 Allows a buyer and a seller to communicate with each other. Along with a button to send messages, the buyer is allowed to send an offer with a price. The seller is able to accept or decline the offer. If it is declined the seller can choose to continue or end communication with the buyer. If the offer is accepted, both parties can continue talking but the item being discussed is considered sold.
 
 ###Payment System
-In most of the competing applications, payment is done via communication between the buyer and seller.  MarkIt will allow the buyer to pay the seller through the app once an offer has been accepeted either through Venmo or PayPal.  This will depend on the preferred method of payment of the seller.
+In most of the competing applications, payment is done via communication between the buyer and seller.  MarkIt will allow the buyer to pay the seller through the app once an offer has been accepted either through Venmo or PayPal.  This will depend on the preferred method of payment of the seller.
 
 ###Notifications
 Users will be sent notifications when they receive a message, when an item on their watchlist is sold or changes in price, and when tagged items become available in their area.
