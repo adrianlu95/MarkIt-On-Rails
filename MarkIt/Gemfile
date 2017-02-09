@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
 gem 'materialize-sass'
+gem 'bootstrap-sass'
 
 group :development, :test do
   gem 'sqlite3'
