@@ -40,7 +40,7 @@ The program could create a temporary file while the user is editing a drawing. T
 : Draw a state machine diagram to let a program read floating point numbers in scientific notation as in +37 or -12.3e+17 (which means -12.3 x 10<sup>17</sup>). Allow both E and e for the exponent symbol. [Jeez, is this like Dr. Dorin's DFAs, or what???]
 
 >Floating Point Numbers State Diagram <br>
-![floating-point-state-machine-diagram](images/Floating_Point_Solver_Thing_idk_help_me_pls.svg)
+![floating-point-state-machine-diagram](https://github.com/adrianlu95/MarkIt-On-Rails/blob/master/Documentation/images/Floating_Point_Solver_Thing_idk_help_me_pls.svg)
 
 **Problem 6.1**
 : Consider the ```ClassyDraw``` classes ```Line```, ```Rectangle```, ```Ellipse```, ```Star```, and ```Text```. What properties do these classes all share? What properties do they not share? Are there any properties shared by some classes and not others? Where should the shared and non-shared properties be implemented?
