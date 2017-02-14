@@ -40,7 +40,7 @@ The program could create a temporary file while the user is editing a drawing. T
 : Draw a state machine diagram to let a program read floating point numbers in scientific notation as in +37 or -12.3e+17 (which means -12.3 x 10<sup>17</sup>). Allow both E and e for the exponent symbol. [Jeez, is this like Dr. Dorin's DFAs, or what???]
 
 >Floating Point Numbers State Diagram <br>
-![floating-point-state-machine-diagram](images/Floating_Point_Solver_Thing_idk_help_me_pls.svg "Floating Point Numbers (Click to expand)")
+![floating-point-state-machine-diagram](images/Floating_Point_Solver_Thing_idk_help_me_pls.svg)
 
 **Problem 6.1**
 : Consider the ```ClassyDraw``` classes ```Line```, ```Rectangle```, ```Ellipse```, ```Star```, and ```Text```. What properties do these classes all share? What properties do they not share? Are there any properties shared by some classes and not others? Where should the shared and non-shared properties be implemented?
@@ -66,7 +66,7 @@ Assuming a ```Supplier``` is someone who supplies products for your business, dr
 >A ```Person``` class can hold the properties _Name_, _Phone_, _Address_ and can be a superclass of ```Customer```, ```Employee```, and ```Supplier``` since these classes all share the said properties. Likewise, the classes ```Salaried```, ```VicePresident```, and ```Manager``` share the properties _Office_ and _Salary_. However, only the VicePresident has the property _Managers_ and ```Salaried``` does not have the _Employees_ property so an extra class, ```EmployeePerks``` can be a superclass of both ```Salaried``` and ```VicePresident``` and ```Manager``` will be a subclass of ```Salaried```.
 <br><br>
 Floating Point Numbers State Diagram <br>
-![employee-inheritance-diagram](images/Diagram_2_I_Hope_This_is_right.svg "Floating Point Numbers (Click to expand)")
+![employee-inheritance-diagram](images/Diagram_2_I_Hope_This_is_right.svg)
 
 **Problem 6.6**
 : Suppose your company has many managerial types such as department manager, project manager, and division manager. You also have multiple levels of vice president, some of whom report to other manager types. How could you combine the ```Salaried```, ```Manager```, and ```VicePresident``` types you used in Exercise 3? Draw the new inheritance hierarchy.
