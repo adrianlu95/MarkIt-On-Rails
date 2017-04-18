@@ -1,0 +1,23 @@
+banana:
+  title: "Banana"
+  description: "Lone banana, uneaten."
+  price: 2
+  created_at: <%= 10.minutes.ago %>
+
+phone:
+  title: "iPhone 6+"
+  description: "Used, broken iPhone 6+"
+  price: 10
+  created_at: <%= 3.years.ago %>
+
+book:
+  title: "Algebra 1 Texbook"
+  description: "New book mistakenly purchased"
+  price: 75
+  created_at: <%= 2.hours.ago %>
+
+most_recent:
+  title: "TI89 Graphing Calculator"
+  description: "Used, in very good condition"
+  price: 50
+  created_at: <%= Time.zone.now %>
