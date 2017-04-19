@@ -3,7 +3,7 @@ require 'test_helper'
 class UserTest < ActiveSupport::TestCase
 
   def setup
-    @user = User.new(firstname: "Example", lastname: "User", username: "ExampleUser1", email: "exampleuser@test.com", password: "password", password_confirmation: "password")
+    @user = User.new(firstname: "Example", lastname: "User", username: "ExampleUser1", email: "exampleuser@test.edu", password: "password", password_confirmation: "password")
   end
 
   test "should be valid" do
@@ -46,13 +46,13 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "email should not be too long" do
-    @user.email = "a" * 244 + "@example.com"
+    @user.email = "a" * 244 + "@example.edu"
     assert_not @user.valid?
   end
 
   test "email validation should accept valid addresses" do
-    valid_addresses = %w[user@example.com USER@example.COM A_US-ER@exa.mple.org
-                         first.last@exmp.jp alice+bob@ale.cn]
+    valid_addresses = %w[user@example.EdU USER@example.EDU A_US-ER@exa.mple.edu
+                         first.last@exmp.edu alice+bob@ale.edu]
     valid_addresses.each do |valid_address|
       @user.email = valid_address
       assert @user.valid?, "#{valid_address.inspect} should be valid"
@@ -61,7 +61,7 @@ class UserTest < ActiveSupport::TestCase
 
   test "email validation should reject invalid addresses" do
     invalid_addresses = %w[user@example,com user_at_example.org user.name@example.
-                           foo@exa_exa.com foo@exa+exa.com foo@example..com]
+                           foo@exa_exa.com foo@exa+exa.com foo@example..com user@example.com]
     invalid_addresses.each do |invalid_address|
       @user.email = invalid_address
       assert_not @user.valid?, "#{invalid_address.inspect} should be invalid"
@@ -76,7 +76,7 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "email addresses should be saved as lower-case" do
-    mixed_case_email = "Foo@ExAMPle.CoM"
+    mixed_case_email = "Foo@ExAMPle.EDu"
     @user.email = mixed_case_email
     @user.save
     assert_equal mixed_case_email.downcase, @user.reload.email
