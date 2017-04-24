@@ -1,0 +1,11 @@
+<%= form_for(@listing) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+    <%= f.text_field :title, placeholder: "Listing title..."  %>
+    <%= f.text_area :description, placeholder: "Compose new listing..." %>
+    <%= f.number_field :price, in: 1.0..500.0, step: 0.01 %>
+  </div>
+
+
+  <%= f.submit "Post", class: "btn btn-primary" %>
+<% end %>

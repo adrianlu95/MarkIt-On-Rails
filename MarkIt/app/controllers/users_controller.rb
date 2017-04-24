@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
   def show
     @user = User.find(params[:id])
     @listings = @user.listings.paginate(page: params[:page])
@@ -20,6 +21,11 @@ class UsersController < ApplicationController
   end
 
   private
+
+    def correct_user
+      @user = User.find(params[:id])
+      redirect_to(root_url) unless current_user?(@user)
+    end
 
     def user_params
       params.require(:user).permit(:firstname, :lastname, :username, :email, :password, :password_confirmation)

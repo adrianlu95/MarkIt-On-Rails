@@ -3,21 +3,34 @@ banana:
   description: "Lone banana, uneaten."
   price: 2
   created_at: <%= 10.minutes.ago %>
+  user: tester
 
 phone:
   title: "iPhone 6+"
   description: "Used, broken iPhone 6+"
   price: 10
   created_at: <%= 3.years.ago %>
+  user: tester
 
 book:
   title: "Algebra 1 Texbook"
   description: "New book mistakenly purchased"
   price: 75
   created_at: <%= 2.hours.ago %>
+  user: tester
 
 most_recent:
   title: "TI89 Graphing Calculator"
   description: "Used, in very good condition"
   price: 50
   created_at: <%= Time.zone.now %>
+  user: tester
+
+<% 25.times do |n| %>
+listing_<%= n %>:
+  title: <%= Faker::Lorem.word %>
+  description: <%= Faker::Lorem.sentence(5) %>
+  price: 69
+  created_at: <%= 13.minutes.ago %>
+  user: tester
+<% end %>

@@ -1,7 +1,21 @@
 require 'test_helper'
 
 class UsersProfileTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
+  include ApplicationHelper
+
+  def setup
+    @user = users(:tester)
+  end
+
+  test "profile display" do
+    get user_path(@user)
+    assert_template 'users/show'
+    # assert_select 'title', full_title(@user.username)
+    # assert_select 'h1', text: @user.firstname
+    assert_match @user.listings.count.to_s, response.body
+    # assert_select 'div.pagination'
+    # @user.listings.paginate(page: 1).each do |listing|
+    #   assert_match listing.content, response.body
+    # end
+  end
 end
